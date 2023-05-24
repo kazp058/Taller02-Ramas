@@ -13,7 +13,12 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import modelo.Cancion;
-
+/*
+ * lblTitulo
+ * ivCancion
+ * 
+ * 
+ */
 public class PrimaryController {
 
     @FXML
@@ -45,7 +50,15 @@ public class PrimaryController {
             } catch (FileNotFoundException ex) {
                 ex.printStackTrace();
             }
-            Label lbT = new Label(c.getTitulo() + " \n" + c.getCantante());//titulo y cantante
+            
+            /*
+             * 
+             * getCantante
+             * getTitulo
+             * 
+             */
+            
+            Label lbT = new Label(c.getCantante() + " \n" + c.getTitulo());//titulo y cantante
             lbT.setStyle("-fx-font-weight: bold;-fx-font-size: 14;");
 
             hb.getChildren().addAll(lbp, iv, lbT);//agregar al hbox
